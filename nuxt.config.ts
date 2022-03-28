@@ -1,6 +1,22 @@
 import { defineNuxtConfig } from 'nuxt3'
+import Unocss from 'unocss/vite'
+import { presetAttributify, presetWind } from 'unocss'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+buildModules: [
+    '@unocss/nuxt',
+  ],
+    vite: {
+    plugins: [
+    Unocss({
+      presets: [
+        presetAttributify({ /* preset options */}),
+        presetWind(),
+        // ...custom presets
+      ],
+    }),
+  ],
 
+    }
 })
