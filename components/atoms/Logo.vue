@@ -1,5 +1,5 @@
 <template>
     <div>
-        <span>Clarance Liberi</span>
+        <span class="m-100">Clarance Liberi</span>
     </div>
 </template>
