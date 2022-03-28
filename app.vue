@@ -1,5 +1,6 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <molecules-navbar />
   </div>
 </template>
+
