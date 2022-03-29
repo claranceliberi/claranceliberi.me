@@ -1,0 +1,3 @@
+<template>
+    <span class="text-sm"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: inherit;" class="underline">CC BY-NC-SA 4.0</a> 2021-PRESENT &copy; Ntwari Clarance Liberiste</span>
+</template>

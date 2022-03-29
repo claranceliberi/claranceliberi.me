@@ -1,6 +1,8 @@
 <template>
     <div class="h-full">
+        <header>
         <molecules-navbar />
+        </header>
         <section class="flex items-center justify-center h-5/6">
             <article class="w-fit">
                 <p>Hello,</p>
@@ -8,5 +10,8 @@
                 <p>Nice to meet you</p>
             </article>
         </section>
+        <footer class=" flex justify-center" >
+            <atoms-footer />
+        </footer>
     </div>
 </template>
