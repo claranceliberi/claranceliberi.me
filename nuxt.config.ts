@@ -4,11 +4,9 @@ import { presetAttributify, presetWind } from 'unocss'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-    css:["@/assets/styles/index.scss"],
-buildModules: [
-    '@unocss/nuxt',
-  ],
+    css:["@/assets/styles/index.scss","uno.css"],
   unocss: {
+
     // presets
     uno: true, // enabled `@unocss/preset-uno`
     icons: true, // enabled `@unocss/preset-icons`
@@ -22,6 +20,7 @@ buildModules: [
     vite: {
     plugins: [
     Unocss({
+      
       presets: [
         presetAttributify({ /* preset options */}),
         presetWind(),

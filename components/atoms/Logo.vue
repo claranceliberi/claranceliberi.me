@@ -1,5 +1,5 @@
 <template>
     <div>
-        <span class="m-100">Clarance Liberi</span>
+        <span class="inspiration-font text-10">Clarance Liberi</span>
     </div>
 </template>

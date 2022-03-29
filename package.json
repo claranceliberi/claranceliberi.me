@@ -6,9 +6,9 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@unocss/nuxt": "^0.30.6",
     "nuxt3": "latest",
     "sass": "^1.49.9",
-    "sass-loader": "^12.6.0"
+    "sass-loader": "^12.6.0",
+    "unocss": "^0.30.6"
   }
 }

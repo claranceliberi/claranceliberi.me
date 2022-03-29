@@ -404,30 +404,6 @@
     unimport "^0.1.3"
     untyped "^0.4.3"
 
-"@nuxt/kit@npm:@nuxt/kit-edge@latest":
-  version "3.0.0-27474800.8dd77d7"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27474800.8dd77d7.tgz#18c65cb4712fbd44c10213f32b0b6ff2a8168634"
-  integrity sha512-5UaVagNtVwAgUJaRFjTxtbLaThHJrFr+mJa896BgfGs4For7ASFKFmbfP+dmG81pOJO/jtiu0iBmrBR3rD0eEQ==
-  dependencies:
-    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27474800.8dd77d7"
-    c12 "^0.2.4"
-    consola "^2.15.3"
-    defu "^6.0.0"
-    globby "^13.1.1"
-    hash-sum "^2.0.0"
-    ignore "^5.2.0"
-    jiti "^1.13.0"
-    knitwork "^0.1.1"
-    lodash.template "^4.5.0"
-    mlly "^0.5.1"
-    pathe "^0.2.0"
-    pkg-types "^0.3.2"
-    scule "^0.2.1"
-    semver "^7.3.5"
-    unctx "^1.1.3"
-    unimport "^0.1.3"
-    untyped "^0.4.3"
-
 "@nuxt/nitro@npm:@nuxt/nitro-edge@3.0.0-27474482.90415d4":
   version "3.0.0-27474482.90415d4"
   resolved "https://registry.yarnpkg.com/@nuxt/nitro-edge/-/nitro-edge-3.0.0-27474482.90415d4.tgz#a4e25401637a1f9921add6c27f7a0667e9cd2e48"
@@ -496,22 +472,6 @@
   version "3.0.0-27474482.90415d4"
   resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27474482.90415d4.tgz#4ee2cb3752d40922c4c594322427f1db9ad2adbb"
   integrity sha512-9zaPfvt7PFup6EJ4tKILMt7rUIi54s8ICHeiWBv3NOuyBKOSdiMz41WO9VkC8WCN2SMP3KiiG6t7Y6RMqvJQUw==
-  dependencies:
-    c12 "^0.2.4"
-    create-require "^1.1.1"
-    defu "^6.0.0"
-    jiti "^1.13.0"
-    pathe "^0.2.0"
-    postcss-import-resolver "^2.0.0"
-    scule "^0.2.1"
-    std-env "^3.0.1"
-    ufo "^0.8.1"
-    unimport "^0.1.3"
-
-"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27474800.8dd77d7":
-  version "3.0.0-27474800.8dd77d7"
-  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27474800.8dd77d7.tgz#396958920ab3b730b42c29244d6f3b86e9138b7f"
-  integrity sha512-wbac0zJayyiryPmKuLRbBx5rASdl1zI532/tqfdvcfx2p/6rSFuXhF7KNqmJxot0yPGnJLcTDkHYMeKMgmWJCA==
   dependencies:
     c12 "^0.2.4"
     create-require "^1.1.1"
@@ -731,23 +691,6 @@
     gzip-size "^6.0.0"
     sirv "^2.0.2"
 
-"@unocss/nuxt@^0.30.6":
-  version "0.30.6"
-  resolved "https://registry.yarnpkg.com/@unocss/nuxt/-/nuxt-0.30.6.tgz#e5e7f26096a11bfa4f13e149fde29ca4dd97b968"
-  integrity sha512-tgYM/MCvRpwGlMI4bimSOCjkiU1HrtY/gyVXWpTJW/T1pdjCICQAbEFYL2i7Ui5CIvjgmFLeah2ScehGBOlQwQ==
-  dependencies:
-    "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
-    "@unocss/core" "0.30.6"
-    "@unocss/preset-attributify" "0.30.6"
-    "@unocss/preset-icons" "0.30.6"
-    "@unocss/preset-typography" "0.30.6"
-    "@unocss/preset-uno" "0.30.6"
-    "@unocss/preset-web-fonts" "0.30.6"
-    "@unocss/reset" "0.30.6"
-    "@unocss/vite" "0.30.6"
-    "@unocss/webpack" "0.30.6"
-    unocss "0.30.6"
-
 "@unocss/preset-attributify@0.30.6":
   version "0.30.6"
   resolved "https://registry.yarnpkg.com/@unocss/preset-attributify/-/preset-attributify-0.30.6.tgz#25dcea54fb9a9a68330f455950a16fc18fee0f51"
@@ -839,17 +782,6 @@
     "@unocss/scope" "0.30.6"
     "@unocss/transformer-directives" "0.30.6"
     magic-string "^0.26.1"
-
-"@unocss/webpack@0.30.6":
-  version "0.30.6"
-  resolved "https://registry.yarnpkg.com/@unocss/webpack/-/webpack-0.30.6.tgz#9236e505d64cb81bcdf78bf65e100080b3231c4a"
-  integrity sha512-CQLaw+F6kiSCS7Fh0cuXNOj/S4Nk2QvwWnlpSI5SnG4QsVUEZh1IdCZdcUVN2wPG3rfp1zMhwgwLOj+EWEBUcw==
-  dependencies:
-    "@rollup/pluginutils" "^4.2.0"
-    "@unocss/config" "0.30.6"
-    "@unocss/core" "0.30.6"
-    unplugin "^0.6.0"
-    webpack-sources "^3.2.3"
 
 "@vercel/nft@^0.17.5":
   version "0.17.5"
@@ -4641,7 +4573,7 @@ unconfig@^0.3.2:
     defu "^5.0.1"
     jiti "^1.13.0"
 
-unctx@^1.1.2, unctx@^1.1.3:
+unctx@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/unctx/-/unctx-1.1.3.tgz#c8db9a1b6bf0a9f94185cf01120286e80f8e4f92"
   integrity sha512-x3sI4ueuHw05zQgbzfpzF9XO+zw0C7sPCPoTRIgVPAXr76HALqcV97cJDEa5Nj+WCAl7V2rgSZR/p4uM78gO2g==
@@ -4691,7 +4623,7 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unocss@0.30.6:
+unocss@^0.30.6:
   version "0.30.6"
   resolved "https://registry.yarnpkg.com/unocss/-/unocss-0.30.6.tgz#d56d5323880f21b7ce7fd46824953d15d19e6c6e"
   integrity sha512-jltfmvJvGkqGooLJ63//k0iTYtXAPAOhYZvhMjZ5c8nHwI+yDLOLqYNPqlv1hi6D/46VtqaWJ5IL2fdGT8ndaQ==
