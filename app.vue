@@ -1,6 +1,4 @@
 <template>
-  <div>
-    <molecules-navbar />
-  </div>
+<router-view />
 </template>
 
