@@ -3,12 +3,12 @@
         <header>
             <molecules-navbar />
         </header>
-        <section class="flex items-center justify-center py-8">
+        <section class="flex items-center justify-center py-8 text-lg">
             <article class="w-fit">
                 <p>Hello,</p>
                 <div class="py-2 flex items-baseline">
                     <p class="pr-2">I'm</p>
-                    <h3>Ntwari Clarance Liberiste</h3>
+                    <h3 class="font-bold text-xl">Ntwari Clarance Liberiste</h3>
                 </div>
                 <p>Nice to meet you</p>
             </article>
