@@ -11,7 +11,6 @@
                     <h3>Ntwari Clarance Liberiste</h3>
                 </div>
                 <p>Nice to meet you</p>
-                <button class="i-carbon-sun dark:i-carbon-moon" />
             </article>
         </section>
         <footer class="flex justify-center">
