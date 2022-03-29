@@ -1,9 +1,9 @@
 <template>
-    <div class="h-full">
+    <div class="h-full flex flex-col justify-between">
         <header>
             <molecules-navbar />
         </header>
-        <section class="flex items-center justify-center h-5/6">
+        <section class="flex items-center justify-center py-8">
             <article class="w-fit">
                 <p>Hello,</p>
                 <div class="py-2 flex items-baseline">
@@ -13,7 +13,7 @@
                 <p>Nice to meet you</p>
             </article>
         </section>
-        <footer class="flex justify-center">
+        <footer class="flex py-2 justify-center">
             <atoms-footer />
         </footer>
     </div>
