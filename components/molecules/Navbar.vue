@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between mx-2">
+    <div class="flex justify-between m-2">
         <div>
             <atoms-logo />
         </div>
