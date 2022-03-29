@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from 'nuxt3'
 import Unocss from 'unocss/vite'
 import { presetAttributify, presetWind } from 'unocss'
+import presetIcons from '@unocss/preset-icons'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -33,7 +34,15 @@ export default defineNuxtConfig({
     Unocss({
       
       presets: [
-        presetAttributify({ /* preset options */}),
+        // @ts-ignore
+        presetIcons({
+          extraProperties: {
+            'display': 'inline-block',
+            'vertical-align': 'middle',
+            // ...
+          },
+        }) ,
+        presetAttributify(),
         presetWind(),
         // ...custom presets
       ],

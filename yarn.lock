@@ -326,7 +326,14 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify/types@^1.1.0":
+"@iconify-json/carbon@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@iconify-json/carbon/-/carbon-1.1.2.tgz#d554cdc6795ee32e8f00219273d878506190561b"
+  integrity sha512-kopcVYOmKM1e6u7B8XugmiNV+7lDcK5hJR2XLVpYPfwJSw5M6jGTFe4ZD+SbWfxavOt67ufQtczWKwd9o7gN9Q==
+  dependencies:
+    "@iconify/types" "^1.0.12"
+
+"@iconify/types@^1.0.12", "@iconify/types@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-1.1.0.tgz#dc15fc988b1b3fd558dd140a24ede7e0aac11280"
   integrity sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==
@@ -767,6 +774,11 @@
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.30.6.tgz#c5f16372ca544343d8af04e7430b196b1ae3f909"
   integrity sha512-hN/W1xmAsKdXOOpQ37YdAwHTz5+w4yhi6HA7FbkxrxBWy/EhcnxIgrZ/EbdtsSBQZ+Jf8vD1CGVkjQmU4ax0jQ==
 
+"@unocss/core@0.30.7":
+  version "0.30.7"
+  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.30.7.tgz#ae78709343abbf3154e466903a34e780251d8f83"
+  integrity sha512-ipYd9enjt07Udhuzy7t/gy+13QdrbqWZ1APwd5asUiF/sqeweyt48pUNA/qhmCLtv8NpFaYs24mnSyUVlribgw==
+
 "@unocss/inspector@0.30.6":
   version "0.30.6"
   resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-0.30.6.tgz#43a6445626d0365a6b4da1ac3c724714dcb8adfb"
@@ -789,6 +801,14 @@
   dependencies:
     "@iconify/utils" "^1.0.30"
     "@unocss/core" "0.30.6"
+
+"@unocss/preset-icons@^0.30.7":
+  version "0.30.7"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-0.30.7.tgz#1fa46fa59b148e3986c5b4eba713b6067f07b164"
+  integrity sha512-zVHHL12lxH9761Ic+nqnDKhuKHJxAYlO6Ifh9NkDlwhPhIExky1jhr/Bqayc57b+oy81BR2HwEJSR+fvXJuu2A==
+  dependencies:
+    "@iconify/utils" "^1.0.30"
+    "@unocss/core" "0.30.7"
 
 "@unocss/preset-mini@0.30.6":
   version "0.30.6"
