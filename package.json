@@ -7,7 +7,14 @@
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.5.0",
     "nuxt3": "latest",
+    "prettier": "^2.6.1",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "unocss": "^0.30.6"
