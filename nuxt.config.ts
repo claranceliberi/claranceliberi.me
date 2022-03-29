@@ -1,10 +1,10 @@
 import { defineNuxtConfig } from 'nuxt3'
 import Unocss from 'unocss/vite'
-import { presetAttributify, presetWind } from 'unocss'
 import presetIcons from '@unocss/preset-icons'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  buildModules: ['@nuxtjs/tailwindcss'],
   modules: ['@nuxtjs/color-mode'],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
@@ -41,12 +41,13 @@ export default defineNuxtConfig({
             'vertical-align': 'middle',
             // ...
           },
-        }) ,
-        presetAttributify(),
-        presetWind(),
+        })
         // ...custom presets
       ],
     }),
   ],
+    },
+    tailwindcss: {
+      cssPath: '~/assets/styles/_tailwind.scss'
     }
 })
