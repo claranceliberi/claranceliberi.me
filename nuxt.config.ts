@@ -1,10 +1,11 @@
 import { defineNuxtConfig } from 'nuxt3'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
+import TypedRouter from 'nuxt-typed-router';
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss',TypedRouter],
   modules: ['@nuxtjs/color-mode'],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
@@ -15,6 +16,9 @@ export default defineNuxtConfig({
     classPrefix: '',
     classSuffix: '',
     storageKey: 'nuxt-color-mode'
+  },
+  nuxtTypedRouter: {
+    // options
   },
     css:["@/assets/styles/index.scss","uno.css"],
   unocss: {

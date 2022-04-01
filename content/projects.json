@@ -1,0 +1,62 @@
+
+
+[
+
+    {
+        "category":"Open Source",
+        "projects":[
+
+            {
+                "name":"Stunicons",
+                "link":"https://github.com/Stunnity/stunicons",
+                "description":"Burgeoning pack with 100+ highly customizable icons for your outstanding UI."
+            },
+            {
+                "name":"Stunicons.com",
+                "link":"https://stunicons.com/",
+                "description":"stunicons website"
+            },
+            {
+                "name":"Stunicons Figma Plugin",
+                "link":"https://www.figma.com/community/plugin/986549709687678796/Stunicons",
+                "description":"Stunicons figma plugin"
+            },
+            {
+                "name":"Valdie",
+                "link":"https://github.com/veritem/valdie",
+                "description":"Ts/Js schema validator for Node and Browser"
+            }
+        ]
+    },
+    {
+        "category":"Startups",
+        "projects":[
+            {
+                "name":"Stunlab",
+                "link":"https://stunlabmobile.herokuapp.com/",
+                "description":"Platform that makes it easy for students to get learning books and track their progress in learning,making tests and suggest area of improvment"
+            },
+            {
+                "name":"Kurious learn",
+                "link":"https://kurious.rw/",
+                "description":"All in one tool for education institution, this will help colleges,highschools and university to bring everything in their campuses to technology, from sharing courses to discusions. Kurious learn connects a deep understanding of education with the power of technology to push the boundaries of learning",
+            },
+            {
+                "name":"Huntersofbook",
+                "link":"https://dev.huntersofbook.com/",
+                "description":"Developing Book Library. A place where contributors and readers meet, develop and contribute to the book."
+            }
+        ]
+    },
+    {
+        "category":"Fun",
+        "projects":[
+            {
+                "name":"LuckyScore",
+                "link":"https://www.luckyscore.live/",
+                "description":"A live instant app where school sports competition are shared About"
+            }
+        ]
+    }
+
+]
