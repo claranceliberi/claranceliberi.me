@@ -12,6 +12,9 @@
                 <router-link class="no-underline" to="/about">About</router-link>
             </li>
             <li>
+                <router-link class="no-underline" to="/projects">Projects</router-link>
+            </li>
+            <li>
                 <button
                     v-show="$colorMode.value === 'dark'"
                     @click="$colorMode.preference = 'light'"
