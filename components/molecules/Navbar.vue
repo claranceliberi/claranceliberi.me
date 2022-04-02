@@ -13,11 +13,13 @@
             </li>
             <li>
                 <button
+                    aria-label="Light mode"
                     v-show="$colorMode.value === 'dark'"
                     @click="$colorMode.preference = 'light'"
                     class="i-carbon-sun dark:i-carbon-moon text-5 cursor-pointer"
                 />
                 <button
+                    aria-label="Dark mode"
                     v-show="$colorMode.value === 'light'"
                     @click="$colorMode.preference = 'dark'"
                     class="i-carbon-moon dark:i-carbon-moon text-5 cursor-pointer"

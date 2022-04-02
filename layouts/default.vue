@@ -1,5 +1,11 @@
 <template>
     <div class="h-full flex justify-center">
+        <Html lang="en-US">
+      <Head>
+        <Title> Ntwari Clarance Liberiste </Title>
+        <Meta name="description" content="Ntwari Clarance Liberiste's personal website" />
+      </Head>
+    </Html>
         <div class="h-full w-9/12 flex flex-col justify-between">
             <header>
                 <molecules-navbar />
