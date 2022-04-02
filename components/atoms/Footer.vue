@@ -1,5 +1,5 @@
 <template>
-    <span class="text-sm">
+    <span class="text-sm text-color-sec">
         <a
             target="_blank"
             href="https://creativecommons.org/licenses/by-nc-sa/4.0/"

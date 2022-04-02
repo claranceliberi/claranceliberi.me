@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div>
+    <div class="flex justify-center">
+        <div class="w-4/6">
             <header class="pb-10">
                 <h3 class="text-4xl font-bold">Projects</h3>
                 <p class="text-color-sec">This is what took my time</p>

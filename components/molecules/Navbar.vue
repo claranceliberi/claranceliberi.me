@@ -9,9 +9,6 @@
         </div>
         <ul class="list-none links flex space-x-4">
             <li>
-                <router-link class="no-underline" to="/about">About</router-link>
-            </li>
-            <li>
                 <router-link class="no-underline" to="/projects">Projects</router-link>
             </li>
             <li>
