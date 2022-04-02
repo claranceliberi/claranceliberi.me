@@ -3625,11 +3625,6 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-lodash-es@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
-  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
-
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -3880,7 +3875,7 @@ mkdirp@^0.5.1, mkdirp@^0.5.5:
   dependencies:
     minimist "^1.2.6"
 
-mkdirp@^1.0.3, mkdirp@^1.0.4:
+mkdirp@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
@@ -4171,19 +4166,6 @@ number-is-nan@^1.0.0:
   integrity sha512-vV4zRTZTy4XpLt5C8J7MJIN1atJz9bC0AL3FDcHNykGzLdfX3YiZWnVPmv/zs8IlrA6iADlbs0eFgmTJ6WSTGQ==
   optionalDependencies:
     fsevents "~2.3.2"
-
-nuxt-typed-router@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/nuxt-typed-router/-/nuxt-typed-router-1.1.2.tgz#95a769919fdc24cbc70789bb3486b8579c8d4c2b"
-  integrity sha512-/moOurpYDlTPf8WjX/Zj7SVInsF+mPFi7NwknMKQMWB5bZ79GB2yGHsQz1+rXeJdkroWO1C04xsQbw1u9rbO7A==
-  dependencies:
-    "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
-    chalk "^4.1.2"
-    lodash-es "^4.17.21"
-    log-symbols "^5.1.0"
-    mkdirp "^1.0.4"
-    pathe "^0.2.0"
-    prettier "^2.6.1"
 
 nuxt3@latest:
   version "3.0.0-27480376.fdd38f9"
@@ -4858,7 +4840,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@2.6.1, prettier@^2.6.1:
+prettier@2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.1.tgz#d472797e0d7461605c1609808e27b80c0f9cfe17"
   integrity sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==
