@@ -1,4 +1,5 @@
 <template>
+    <NuxtLayout>
     <article class="flex justify-center">
         <section class="justify-center py-8 text-lg w-4/6">
             <article class="w-fit italic">
@@ -15,4 +16,6 @@
             </article>
         </section>
     </article>
+</NuxtLayout>
+
 </template>
