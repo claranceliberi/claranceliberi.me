@@ -28,6 +28,7 @@ module.exports = {
                     'lighter-alt': 'var(--theme-lighter-alt)',
                     lighter: 'var(--theme-lighter)',
                     light: 'var(--theme-light)',
+                    'light-a': 'var(--theme-light-a)',
                     tertiary: 'var(--theme-tertiary)',
                     'dark-alt': 'var(--theme-dark-alt)',
                     dark: 'var(--theme-dark)',
