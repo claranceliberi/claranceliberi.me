@@ -338,7 +338,7 @@
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-1.1.0.tgz#dc15fc988b1b3fd558dd140a24ede7e0aac11280"
   integrity sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==
 
-"@iconify/utils@^1.0.31":
+"@iconify/utils@^1.0.31", "@iconify/utils@^1.0.32":
   version "1.0.32"
   resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-1.0.32.tgz#ad6262478a27a4ff59f610a0c930710f3d7d970a"
   integrity sha512-m+rnw7qKHq/XF7DAi4BcFoEAcXBfqqMgQJh8brGEHeqE/RUvgDMjmxsHgWnVpFsG+VmjGyAiI7nwXdliCwEU0Q==
@@ -783,6 +783,11 @@
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.30.10.tgz#e66a68d8673cbac16f4398ae57b5b7978bbc5338"
   integrity sha512-DgakjQ0Zb3Th+RYEuZHWkOv7HQRkeNteb7B0MX/1n+1FqZnydJnk4zpc8Pu+WGp8pN+nGRWyiAHZzHc3Fd0AwA==
 
+"@unocss/core@0.31.3":
+  version "0.31.3"
+  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.31.3.tgz#4d787f8ce1f71c8e20a6cb863f8154e25d72da02"
+  integrity sha512-0xnRatssQzXs44qC9vuvJXBL6vDAEhTOuvH2Yp0cQhowsdrf6W6iC1fw/v8DNr6NJraBOwJIMKcD1nxoiXpNJA==
+
 "@unocss/inspector@0.30.10":
   version "0.30.10"
   resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-0.30.10.tgz#e9ec7d3869218f9c83a86631e93ee628f626ddc3"
@@ -805,6 +810,14 @@
   dependencies:
     "@iconify/utils" "^1.0.31"
     "@unocss/core" "0.30.10"
+
+"@unocss/preset-icons@0.31.3":
+  version "0.31.3"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-0.31.3.tgz#6bbff63b42afe2d55ffb32c22bb75383d7244116"
+  integrity sha512-AQYSw4644wsXZZlACzeJKZqOndv/MoQkuf+ijsslacqd0ThrLBLJhExzYxln10aS2eqA4JCIq8GUCEq/x8YYCw==
+  dependencies:
+    "@iconify/utils" "^1.0.32"
+    "@unocss/core" "0.31.3"
 
 "@unocss/preset-mini@0.30.10":
   version "0.30.10"
