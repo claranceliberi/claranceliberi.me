@@ -1,7 +1,6 @@
 <template>
 <NuxtLayout>
     <div class="flex justify-center">
-        Articles
          <ContentRenderer :value="data"/>
     </div>
 </NuxtLayout>
@@ -10,7 +9,18 @@
 <script setup lang="ts">
 
 const route = useRoute()
-const { data } = await useAsyncData('home', () => queryContent(route.path).findOne())
+const { data } = await useAsyncData(`blog/${route.path}`, () => queryContent(route.path).findOne())
+
+useHead({
+    title: data.value.title,
+    meta:[
+        {
+            hid: 'description',
+            name: 'description',
+            content: data.value.description,
+          }
+    ]
+})
 
 onMounted(() => {
     console.log(data.value)

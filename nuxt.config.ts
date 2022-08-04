@@ -6,6 +6,7 @@ import presetIcons from '@unocss/preset-icons'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   buildModules: ['@nuxtjs/tailwindcss'],
+
   modules: [
     '@nuxtjs/color-mode',
     '@nuxt/content'
