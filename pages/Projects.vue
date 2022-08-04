@@ -1,4 +1,5 @@
 <template>
+<NuxtLayout>
     <div class="flex justify-center">
         <div class="w-4/6">
             <header class="pb-10">
@@ -20,6 +21,7 @@
             </section>
         </div>
     </div>
+</NuxtLayout>
 </template>
 <script lang="ts" setup>
 import projects from "@/content/projects.json"

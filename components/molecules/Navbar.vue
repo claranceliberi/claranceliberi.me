@@ -3,11 +3,14 @@
 </script>
 
 <template>
-    <div class="flex justify-between m-2">
+    <div class="flex justify-between m-2 pt-2">
         <div>
             <atoms-logo />
         </div>
         <ul class="list-none links flex space-x-4">
+            <li>
+                <router-link class="no-underline" to="/articles">Articles</router-link>
+            </li>
             <li>
                 <router-link class="no-underline" to="/projects">Projects</router-link>
             </li>
