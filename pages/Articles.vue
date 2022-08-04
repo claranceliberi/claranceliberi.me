@@ -2,6 +2,7 @@
 <NuxtLayout>
     <div class="flex justify-center">
         Articles
+         <ContentDoc />
     </div>
 </NuxtLayout>
 </template>

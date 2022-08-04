@@ -24,7 +24,7 @@
 </NuxtLayout>
 </template>
 <script lang="ts" setup>
-import projects from "@/content/projects.json"
+import projects from "@/data/projects.json"
 definePageMeta({
   title: 'Ntwari Clarance Liberiste | Projects',
   
