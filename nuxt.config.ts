@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 // import TypedRouter from 'nuxt-typed-router';
