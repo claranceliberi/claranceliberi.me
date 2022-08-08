@@ -911,6 +911,11 @@
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.3.tgz#e7926e65a9d40b7983aa82e57439077d72b44063"
   integrity sha512-S2b0pKDa2UUvehAm0XTl8WPetZUBbKFWgwphm2UNGeDjFQB7odEyj3Moej6EgXWlEosAH/z3x3hHkofmc8ggMQ==
 
+"@unocss/core@0.45.5":
+  version "0.45.5"
+  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.5.tgz#d2cd4351e35a11629755ad65b514a83a38c70187"
+  integrity sha512-6boP8sGTRb+nE87pdjii7otO/tguIlDkFh90E6mglA0XdjHWiLCCNlgJoxgjCGCPNYUm/Nojx0bUbcokuqBZDw==
+
 "@unocss/inspector@0.45.3":
   version "0.45.3"
   resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-0.45.3.tgz#b5bdb62503d6464b2fbabbc4078bab79027aafc8"
@@ -933,6 +938,15 @@
   dependencies:
     "@iconify/utils" "^1.0.33"
     "@unocss/core" "0.45.3"
+    ohmyfetch "^0.4.18"
+
+"@unocss/preset-icons@0.45.5":
+  version "0.45.5"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-0.45.5.tgz#4144ed23a723e09adb390dfe7545d9506ee8c467"
+  integrity sha512-msrhKKEWh5HMyQXnseKjMTe8dZZZl/URaxCtDkIhzGJHzDvTAiU7kDr6pAr3Uxw2DgDEviq159W22679JyaBHg==
+  dependencies:
+    "@iconify/utils" "^1.0.33"
+    "@unocss/core" "0.45.5"
     ohmyfetch "^0.4.18"
 
 "@unocss/preset-mini@0.45.3":
