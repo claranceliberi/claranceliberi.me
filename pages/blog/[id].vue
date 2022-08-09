@@ -1,8 +1,18 @@
 <template>
 <NuxtLayout>
-    <div class="flex justify-center">
-         <ContentRenderer :value="data"/>
-    </div>
+    <main class="flex justify-center">
+        <section class="max-w-xl">
+            <header class="my-5 py-5 border-b-2">
+                <h2 class="text-4xl"> {{data.title}} </h2>
+                <p class="flex items-center mt-6 ">
+                    <span class="text-color-sec"> {{ new Date(data.date).toLocaleString('en-us',{dateStyle:'full'}) }} </span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-color mx-4 opacity-40"></span>
+                    <span class="text-color-sec"> {{data.duration}} min </span>
+                </p>
+            </header>
+            <ContentRenderer :value="data"/>
+        </section>
+    </main>
 </NuxtLayout>
 </template>
 
@@ -30,5 +40,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
+ 
 
 </style>
