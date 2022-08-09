@@ -1,10 +1,11 @@
 ---
-title: 'First blog Post'
+title: 'Second blog Post'
 description: 'Meta description'
-date: '7 June 2020'
+date: '10 June 2022'
 duration: 7
 ---
 
-# My fourth blog post
+
+# My second blog post
 
 Welcome to my first blog post using content module
