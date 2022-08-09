@@ -10,7 +10,7 @@
                     <span class="text-color-sec"> {{data.duration}} min </span>
                 </p>
             </header>
-            <ContentRenderer :value="data"/>
+            <ContentRenderer id="content" :value="data"/>
         </section>
     </main>
 </NuxtLayout>
@@ -39,7 +39,32 @@ onMounted(() => {
 
 </script>
 
-<style scoped>
- 
+<style lang="scss" >
+ #content{
+
+    p,ol,ul{
+        @apply my-6;
+    }
+
+    p,li,ol,ul{
+        color:var(--color-sec);
+
+        code {
+            font-style: italic;
+
+            &::after, &::before{
+                content:'`'
+            }
+        }
+    }
+
+    ol{
+        @apply list-decimal list-inside;
+    }
+
+    ul{
+        @apply list-inside list-disc  ;
+    }
+ }
 
 </style>
