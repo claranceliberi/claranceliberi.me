@@ -5,7 +5,10 @@ import presetIcons from '@unocss/preset-icons'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts'
+  ],
 
   modules: [
     '@nuxtjs/color-mode',
@@ -60,4 +63,14 @@ export default defineNuxtConfig({
       theme:'vitesse-dark'
     }
   },
+  googleFonts: {
+    prefetch:true,
+    preconnect:true,
+    preload:true,
+    families: {
+      Barlow:true,
+      'Fira+Code':true,
+      Inspiration:true,
+    }
+  }
 })

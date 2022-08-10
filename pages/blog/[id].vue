@@ -72,8 +72,17 @@ onMounted(() => {
         }
     }
 
+    code {
+        font-family: 'Fira Code', monospace;
+
+        *{
+            font-family: 'Fira Code', monospace;
+        }
+    }
     pre{
+        @apply px-4 py-2 rounded-sm;
         background-color: #2e3440ff;
+        
     }
  }
 
