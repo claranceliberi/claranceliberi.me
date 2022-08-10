@@ -80,8 +80,31 @@ onMounted(() => {
         }
     }
     pre{
-        @apply px-4 py-2 rounded-sm;
+        @apply px-2 pb-2 pt-6 rounded-sm relative;
         background-color: #2e3440ff;
+
+        &::after{
+            content:'';
+            @apply bg-red-400 top-[6px] left-2 w-2 h-2 rounded-full absolute;
+        }
+        &::before{
+            content:'';
+            @apply bg-green-400 top-[6px] left-5 w-2 h-2 rounded-full absolute;
+            z-index: 2;
+        }
+
+        code{
+            &::after{
+                content:'';
+                @apply bg-yellow-400 top-[6px] left-8 w-2 h-2 rounded-full absolute;
+            }
+
+            &::before{
+                content:'';
+                @apply top-0 left-0 right-0  h-5 rounded-tl-sm rounded-tr-sm absolute;
+                background-color: rgb(42, 48, 58);
+            }
+        }
         
     }
  }
