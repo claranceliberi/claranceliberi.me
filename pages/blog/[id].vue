@@ -65,6 +65,16 @@ onMounted(() => {
     ul{
         @apply list-inside list-disc  ;
     }
+
+    p{
+        img{
+            width:100%
+        }
+    }
+
+    pre{
+        background-color: #2e3440ff;
+    }
  }
 
 </style>

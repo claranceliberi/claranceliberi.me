@@ -55,6 +55,9 @@ export default defineNuxtConfig({
     cssPath: '~/assets/styles/_tailwind.scss'
   },
   content: {
-    // https://content.nuxtjs.org/api/configuration
+    highlight:{
+
+      theme:'vitesse-dark'
+    }
   },
 })
