@@ -107,6 +107,76 @@ onMounted(() => {
         }
         
     }
+
+    h1,h2,h3,h4,h5,h6{
+        @apply relative font-bold;
+
+        &:hover{
+            
+            &::before{
+            content:'#';
+            @apply absolute -left-5 font-bold;
+        }
+        }
+        
+    }
+
+    h4{
+        @apply text-lg;
+    }
+    h3{
+        @apply text-xl;
+    }
+
+    h2{
+        @apply text-2xl;
+    }
+
+    blockquote{
+        @apply pl-4 border-l-4 border-gray-300;
+
+        p{
+            @apply text-gray-400;
+        }
+    }
+
+    hr{
+        @apply border-t-2
+    }
+
+
+    table{
+        @apply w-full;
+        thead{
+            tr{
+                @apply border-b-2;
+
+                th{
+                    @apply text-left;
+                }
+            }
+        }
+        tbody{
+            tr{
+                @apply border-b py-4 even:bg-gray-200;
+            }
+        }
+    }
+    
  }
 
+
+
+html.dark{
+    #content{
+        blockquote{
+            @apply pl-4 border-l-4 border-gray-600;
+
+            
+            p{
+                @apply text-gray-600;
+            }
+        }
+    }
+}
 </style>

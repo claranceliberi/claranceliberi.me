@@ -66,9 +66,16 @@ I think you can see it clear in the above image that
 2. `add()` was called from `consoleAdd()`
 3. And finally `consoleAdd()` was called by `anonymous` as it was called by browser while running the code.
 
-Simply those number on the end of the name of a function are the number of the line where the function is returned or if the function did not return anything they take the next line to the last function curry brace `}`
+> Simply those number on the end of the name of a function are the number of the line where the function is returned or if the function did not return anything they take the next line to the last function curry brace `}`
 
 That **5** you saw, is the output of `add(2,3).`I hope this post help, Thank you dev community
+
+| Key | Type | Description |
+|---------|--------| -----|
+| 1 | Wonderful | Table |
+| 2 | Wonderful | Data |
+| 3 | Wonderful | Website |
+
 
 ## References
 1. [Mozilla Developer Network MDN](https://developer.mozilla.org/en-US/)
