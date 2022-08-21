@@ -146,6 +146,11 @@ onMounted(() => {
 
 
     table{
+        @apply my-6;
+
+        th,td{
+            @apply px-2;
+        }
         @apply w-full;
         thead{
             tr{
