@@ -15,6 +15,13 @@
                 <router-link class="no-underline" to="/projects">Projects</router-link>
             </li>
             <li>
+                <a
+                    aria-label="Light mode"
+                    v-show="$colorMode.value === 'dark'"
+                    class="i-carbon-sun dark:i-carbon-moon text-5 cursor-pointer"
+                />
+            </li>
+            <li>
                 <button
                     aria-label="Light mode"
                     v-show="$colorMode.value === 'dark'"
