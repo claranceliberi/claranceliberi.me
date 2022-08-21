@@ -7,7 +7,7 @@
         <div>
             <atoms-logo />
         </div>
-        <ul class="list-none links flex space-x-4">
+        <ul class="list-none links flex space-x-4 text-color-sec">
             <li>
                 <router-link class="no-underline" to="/articles">Articles</router-link>
             </li>

@@ -146,12 +146,11 @@ onMounted(() => {
 
 
     table{
-        @apply my-6;
+        @apply my-6 w-full;
 
         th,td{
             @apply px-2;
         }
-        @apply w-full;
         thead{
             tr{
                 @apply border-b-2;
@@ -163,7 +162,7 @@ onMounted(() => {
         }
         tbody{
             tr{
-                @apply border-b py-4 even:bg-gray-200;
+                @apply border-b border-gray-100 py-4 even:bg-gray-200;
             }
         }
     }
@@ -180,6 +179,27 @@ html.dark{
             
             p{
                 @apply text-gray-600;
+            }
+        }
+
+        table{
+
+            th,td{
+                @apply text-color-sec;
+            }
+            thead{
+                tr{
+                    @apply border-b-2 border-gray-800;
+
+                    th{
+                        @apply text-left;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    @apply border-b border-gray-800 py-4 even:bg-gray-800;
+                }
             }
         }
     }
