@@ -1,14 +1,29 @@
 // @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
-@import "reset";
-@import "tailwind";
+@import 'reset';
+@import 'tailwind';
 
-
-.inspiration-font{
+.inspiration-font {
     font-family: 'Inspiration', cursive;
 }
 
-*{
+* {
     font-family: 'Barlow', sans-serif;
+}
+
+p {
+    a {
+        @apply border-b-2 font-bold border-color-primary px-1 hover:bg-color-primary hover:text-bg;
+    }
+}
+
+#content {
+    p,
+    ul,
+    ol {
+        a {
+            @apply border-b-2 font-bold border-color-primary px-1 hover:bg-color-primary hover:text-bg;
+        }
+    }
 }

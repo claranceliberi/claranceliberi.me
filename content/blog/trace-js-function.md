@@ -56,6 +56,7 @@ And I think you have noticed that in `add()` function we have something called `
 So to know this we will go in `console ` in browser dev tools, as where every console functions are found, so what you will see is the list of where the function is going called and there parents function
 but the exact function will be the first one as you see right here
 
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ls1z1xd8yxhhsouaa0z2.png)
 
 It thinks you already see that we have `add` in the first place so that's where our `console.trace()` was called from , but remember our aim is not knowing where `console.trace()` was called from but where `add()` was called from 
@@ -68,4 +69,7 @@ I think you can see it clear in the above image that
 Simply those number on the end of the name of a function are the number of the line where the function is returned or if the function did not return anything they take the next line to the last function curry brace `}`
 
 That **5** you saw, is the output of `add(2,3).`I hope this post help, Thank you dev community
+
+## References
+1. [Mozilla Developer Network MDN](https://developer.mozilla.org/en-US/)
 
