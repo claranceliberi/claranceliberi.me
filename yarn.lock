@@ -680,7 +680,7 @@
     lodash.template "^4.5.0"
     pathe "^0.3.0"
 
-"@nuxtjs/google-fonts@^3.0.0-0":
+"@nuxtjs/google-fonts@3.0.0-0":
   version "3.0.0-0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/google-fonts/-/google-fonts-3.0.0-0.tgz#f875b90c05536ef1852ed49ab8214b522467b5f8"
   integrity sha512-ZVq2Yqgmi/6duUQig1Zme8s/CbTkTT1jA1o4f+Bc9su/8jZMnIBz0VUw5TSHCupZurhOi3aUYNEfYt8VFjljfg==
@@ -5864,7 +5864,7 @@ schema-utils@^3.0.0:
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
-scss@^0.2.4:
+scss@0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/scss/-/scss-0.2.4.tgz#040d903ed37c5d4fa4ad33ae1fd389ac12a4e065"
   integrity sha512-4u8V87F+Q/upVhUmhPnB4C1R11xojkRkWjExL2v0CX2EXTg18VrKd+9JWoeyCp2VEMdSpJsyAvVU+rVjogh51A==
