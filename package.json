@@ -14,7 +14,7 @@
         "@nuxtjs/color-mode": "3.1.4",
         "@nuxtjs/google-fonts": "^3.0.0-0",
         "@nuxtjs/tailwindcss": "5.3.1",
-        "@unocss/preset-icons": "0.45.5",
+        "@unocss/preset-icons": "0.48.0",
         "babel-eslint": "10.1.0",
         "eslint": "8.21.0",
         "eslint-config-prettier": "8.5.0",
