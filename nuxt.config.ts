@@ -5,8 +5,8 @@ import presetIcons from '@unocss/preset-icons'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    
-    modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxt/content', '@unocss/nuxt',],
+
+    modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxt/content', '@unocss/nuxt', '@nuxtjs/robots',],
     tailwindcss: {
         cssPath: '~/assets/styles/_tailwind.scss'
       },
