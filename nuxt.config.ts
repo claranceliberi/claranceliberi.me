@@ -1,29 +1,15 @@
-import { defineNuxtConfig } from 'nuxt'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
-// import TypedRouter from 'nuxt-typed-router';
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
+
+
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  buildModules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts'
-  ],
-
-  modules: [
-    '@nuxtjs/color-mode',
-    '@nuxt/content'
-  ],
-  colorMode: {
-    preference: 'system', // default value of $colorMode.preference
-    fallback: 'light', // fallback value if not system preference found
-    hid: 'nuxt-color-mode-script',
-    globalName: '__NUXT_COLOR_MODE__',
-    componentName: 'ColorScheme',
-    classPrefix: '',
-    classSuffix: '',
-    storageKey: 'nuxt-color-mode'
-  },
+    
+    modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxt/content', '@unocss/nuxt',],
+    tailwindcss: {
+        cssPath: '~/assets/styles/_tailwind.scss'
+      },
   css:["@/assets/styles/index.scss","uno.css"],
   unocss: {
 
@@ -36,8 +22,23 @@ export default defineNuxtConfig({
     shortcuts: [],
     rules: [],
   },
-
-  vite: {
+      content: {
+        highlight:{
+    
+          theme:'vitesse-dark'
+        }
+      },
+      colorMode: {
+        preference: 'system', // default value of $colorMode.preference
+        fallback: 'light', // fallback value if not system preference found
+        hid: 'nuxt-color-mode-script',
+        globalName: '__NUXT_COLOR_MODE__',
+        componentName: 'ColorScheme',
+        classPrefix: '',
+        classSuffix: '',
+        storageKey: 'nuxt-color-mode'
+      },
+   vite: {
     plugins: [
       Unocss({
         presets: [
@@ -54,23 +55,15 @@ export default defineNuxtConfig({
       }),
     ],
   },
-  tailwindcss: {
-    cssPath: '~/assets/styles/_tailwind.scss'
-  },
-  content: {
-    highlight:{
 
-      theme:'vitesse-dark'
-    }
-  },
-  googleFonts: {
-    prefetch:true,
-    preconnect:true,
-    preload:true,
-    families: {
-      Barlow:true,
-      'Fira+Code':true,
-      Inspiration:true,
-    }
-  }
+  //   googleFonts: {
+  //   prefetch:true,
+  //   preconnect:true,
+  //   preload:true,
+  //   families: {
+  //     Barlow:true,
+  //     'Fira+Code':true,
+  //     Inspiration:true,
+  //   }
+  // }
 })
