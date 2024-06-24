@@ -1,16 +1,14 @@
 <template>
-    <div class="h-full flex justify-center">
-        <div class="h-full w-9/12 flex flex-col justify-between">
-            <header>
-                <molecules-navbar />
-            </header>
-            <section>
-                <slot />
-            </section>
-            <footer class="flex py-2 justify-center">
-                <atoms-footer class="w-4/6" />
-            </footer>
-        </div>
+    <div class="h-full min-h-[100vh]">
+        <header>
+            <!-- <molecules-navbar /> -->
+        </header>
+        <section class="w-full">
+            <slot />
+        </section>
+        <footer class="flex py-2 justify-center">
+            <atoms-footer class="w-4/6" />
+        </footer>
     </div>
 </template>
 

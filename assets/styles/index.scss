@@ -4,8 +4,10 @@
 @import 'reset';
 @import 'tailwind';
 
-.inspiration-font {
-    font-family: 'Inspiration', cursive;
+.kode-mono-font{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 * {

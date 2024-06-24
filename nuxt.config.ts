@@ -5,11 +5,18 @@ import presetIcons from '@unocss/preset-icons'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
-    modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxt/content', '@unocss/nuxt', '@nuxtjs/robots',],
-    tailwindcss: {
-        cssPath: '~/assets/styles/_tailwind.scss'
-      },
+  devtools: { enabled: true },
+  modules: [
+    '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/content',
+    '@unocss/nuxt',
+    '@nuxtjs/robots',
+    "@nuxtjs/google-fonts"
+  ],
+  tailwindcss: {
+    cssPath: '~/assets/styles/_tailwind.scss'
+  },
   css:["@/assets/styles/index.scss","uno.css"],
   unocss: {
 
@@ -28,16 +35,16 @@ export default defineNuxtConfig({
           theme:'vitesse-dark'
         }
       },
-      colorMode: {
-        preference: 'system', // default value of $colorMode.preference
-        fallback: 'light', // fallback value if not system preference found
-        hid: 'nuxt-color-mode-script',
-        globalName: '__NUXT_COLOR_MODE__',
-        componentName: 'ColorScheme',
-        classPrefix: '',
-        classSuffix: '',
-        storageKey: 'nuxt-color-mode'
-      },
+      // colorMode: {
+      //   preference: 'light', // default value of $colorMode.preference
+      //   fallback: 'light', // fallback value if not system preference found
+      //   hid: 'nuxt-color-mode-script',
+      //   globalName: '__NUXT_COLOR_MODE__',
+      //   componentName: 'ColorScheme',
+      //   classPrefix: '',
+      //   classSuffix: '',
+      //   storageKey: 'nuxt-color-mode'
+      // },
    vite: {
     plugins: [
       Unocss({
@@ -56,14 +63,12 @@ export default defineNuxtConfig({
     ],
   },
 
-  //   googleFonts: {
-  //   prefetch:true,
-  //   preconnect:true,
-  //   preload:true,
-  //   families: {
-  //     Barlow:true,
-  //     'Fira+Code':true,
-  //     Inspiration:true,
-  //   }
-  // }
+googleFonts: {
+    prefetch:true,
+    preconnect:true,
+    preload:true,
+    families: {
+      "Kode Mono": true
+    }
+  }
 })
