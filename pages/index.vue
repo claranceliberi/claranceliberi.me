@@ -1,30 +1,20 @@
 <template>
     <NuxtLayout>
         <article class="relative">
-            <!-- <div class="absolute">
-                <svg class="min-h-[100vh] w-56 h-full" viewBox="0 100 100 1">
-                    <rect
-                        class="stroke-grey-grey90 absolute"
-                        x="0"
-                        y="0"
-                        width="100"
-                        height="1000"
-                        fill="none"
-                        stroke-width="0.8"
-                        stroke-dasharray="4,4"
-                        rx="8"
-                        ry="8"
-                    />
-                </svg>
-            </div> -->
-            <div class="min-h-[100vh] w-56 rectangle absolute left"></div>
-            <div class="min-h-[100vh] w-56 rectangle absolute right"></div>
+            <div class="min-h-[100vh] w-56 rectangle absolute left z-0"></div>
+            <div class="min-h-[100vh] w-56 rectangle absolute right z-0"></div>
 
-            <div>
-                <div>
-                    <div class="flex items-center space-x-4">
-                        <AtomsIconButton />
-                        <span class="kode-mono-font text-lg">About me</span>
+            <div class="flex justify-center">
+                <div class="z-10 w-full max-w-[70%]">
+                    <div class="flex flex-col items-center py-20">
+                        <div class="flex items-center space-x-4">
+                            <AtomsIconButton icon="spaces" />
+                            <span class="kode-mono-font text-lg">About me</span>
+                        </div>
+                        <p class="text-lg font-medium max-w-120 mt-10 text-center">
+                            I’m a curious engineer, crafting scalable solutions that elevate teams and deliver value to
+                            users.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -39,11 +29,11 @@
     border-radius: 16px;
 
     &.left {
-        left: 15%;
+        left: 7%;
     }
 
     &.right {
-        right: 15%;
+        right: 7%;
     }
 }
 </style>
