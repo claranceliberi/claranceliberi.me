@@ -4,28 +4,28 @@
 @import 'reset';
 @import 'tailwind';
 
-.kode-mono-font{
-    font-family: "Kode Mono", monospace;
+.kode-mono-font {
+    font-family: 'Kode Mono', monospace;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
 * {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-p {
-    a {
-        @apply border-b-2 font-bold border-color-primary px-1 hover:bg-color-primary hover:text-bg;
-    }
-}
+// p {
+//     a {
+//         @apply border-b-2 font-bold border-color-primary px-1 hover:bg-color-primary hover:text-bg;
+//     }
+// }
 
-#content {
-    p,
-    ul,
-    ol {
-        a {
-            @apply border-b-2 font-bold border-color-primary px-1 hover:bg-color-primary hover:text-bg;
-        }
-    }
-}
+// #content {
+//     p,
+//     ul,
+//     ol {
+//         a {
+//             @apply border-b-2 font-bold border-color-primary px-1 hover:bg-color-primary hover:text-bg;
+//         }
+//     }
+// }

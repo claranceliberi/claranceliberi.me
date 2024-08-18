@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@unocss/nuxt',
     '@nuxtjs/robots',
-    "@nuxtjs/google-fonts"
+    "@nuxtjs/google-fonts",
+    "@nuxt/image"
   ],
   tailwindcss: {
     cssPath: '~/assets/styles/_tailwind.scss'
@@ -68,7 +69,8 @@ googleFonts: {
     preconnect:true,
     preload:true,
     families: {
-      "Kode Mono": true
+      "Kode Mono": true,
+      "Inter":true
     }
   }
 })
