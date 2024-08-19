@@ -6,9 +6,9 @@
         <section class="w-full">
             <slot />
         </section>
-        <footer class="flex py-2 justify-center">
+        <!-- <footer class="flex py-2 justify-center">
             <atoms-footer class="w-4/6" />
-        </footer>
+        </footer> -->
     </div>
 </template>
 
