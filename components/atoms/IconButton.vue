@@ -19,13 +19,13 @@ const props = defineProps<IconProps>()
 </script>
 <template>
     <div
-        class="border-1.5 border-grey-grey4 0 w-fit rounded-xl p-2 text-gray-400 shadow-xl shadow-grey-grey20 gradient-to-tr"
+        class="border-[1.5px] border-grey-grey40 w-fit rounded-xl p-2 text-gray-400 shadow-xl shadow-grey-grey20 gradient-to-tr"
     >
         <div :class="`text-2xl ${icons[$props.icon]}`"></div>
     </div>
 </template>
 <style lang="scss">
 .gradient-to-tr {
-    background: linear-gradient(to top right, var(--grey-grey30), transparent 25% 75%, var(--grey-grey30));
+    background: linear-gradient(to top right, var(--grey-grey30), var(--grey-grey20) 25% 75%, var(--grey-grey30));
 }
 </style>

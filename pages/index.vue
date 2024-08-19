@@ -14,10 +14,10 @@ const age = computed(() => {
 <template>
     <NuxtLayout>
         <article class="relative">
-            <div class="min-h-[100vh] w-56 rectangle absolute left z-0"></div>
-            <div class="min-h-[100vh] w-56 rectangle absolute right z-0"></div>
+            <div class="min-h-[100%] w-56 rectangle absolute left z-0"></div>
+            <div class="min-h-[100%] w-56 rectangle absolute right z-0"></div>
 
-            <div class="flex justify-center">
+            <div class="flex justify-center pb-20">
                 <div class="z-10 w-full max-w-[70%]">
                     <div class="flex flex-col items-center py-20">
                         <div class="flex items-center space-x-4">
@@ -30,9 +30,9 @@ const age = computed(() => {
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-11 grid-rows-2 gap-5">
+                    <div class="grid grid-cols-11 grid-rows-3 md:grid-rows-2 gap-5">
                         <div
-                            class="col-span-5 bg-white bg-gradient-to-tr from-zinc-200/50 to-zinc-200 border-zinc-300 border-2 rounded-2xl p-6"
+                            class="col-span-11 md:col-span-5 row-start-2 md:row-start-1 bg-white bg-gradient-to-tr from-zinc-200/50 to-zinc-200 border-zinc-300 border-2 rounded-2xl p-6"
                         >
                             <AtomsIconButton icon="smile" />
 
@@ -45,16 +45,18 @@ const age = computed(() => {
                             </ul>
                         </div>
                         <div
-                            class="col-span-5 row-start-2 bg-white bg-gradient-to-tr from-zinc-200/50 to-zinc-200 border-zinc-300 border-2 rounded-2xl p-6"
+                            class="col-span-11 md:col-span-5 row-start-3 md:row-start-2 bg-white bg-gradient-to-tr from-zinc-200/50 to-zinc-200 border-zinc-300 border-2 rounded-2xl p-6"
                         >
-                            <p class="text-zinc-500 font-light xl:text-lg">
-                                I love working on tough problems that bring value to teams and products. My passion
-                                for scalable, performant software drives my work, and my relentless curiosity and
-                                commitment set me apart. I'm always exploring new tools to enhance developer experience
-                                and elevate every project.
+                            <p class="text-zinc-500 font-light text-sm xl:text-lg">
+                                I love working on tough problems that bring value to teams and products. My passion for
+                                scalable, performant software drives my work, and my relentless curiosity and commitment
+                                set me apart. I'm always exploring new tools to enhance developer experience and elevate
+                                every project.
                             </p>
                         </div>
-                        <div class="col-span-6 row-span-2 bg-zinc-100 rounded-2xl p-2 border-zinc-300 border-2">
+                        <div
+                            class="col-span-11 md:col-span-6 row-start-1 md:row-span-2 bg-zinc-100 rounded-2xl p-2 border-zinc-300 border-2 shadow-2xl"
+                        >
                             <img
                                 src="https://res.cloudinary.com/dawr8i20o/image/upload/c_scale,e_grayscale,f_webp,w_1360/v1724051359/claranceliberi.me/Liberi_profile_pic_1_-min_w0qwko.webp"
                                 alt="clarance liberi profile picture"
