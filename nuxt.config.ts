@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   },
       content: {
         highlight:{
-    
+
           theme:'vitesse-dark'
         }
       },
@@ -70,7 +70,7 @@ googleFonts: {
     preload:true,
     families: {
       "Kode Mono": true,
-      "Inter":true
+      "Noto Sans KR": '100..900'
     }
   }
 })
