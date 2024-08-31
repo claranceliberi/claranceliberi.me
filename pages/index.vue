@@ -1,14 +1,21 @@
-    <script lang="ts" setup>
-const age = computed(() => {
-    const birthDate = new Date(2003, 0, 10)
-    const today = new Date()
-    let age = today.getFullYear() - birthDate.getFullYear()
-    const monthDifference = today.getMonth() - birthDate.getMonth()
-    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
-        age--
-    }
-    return age
-})
+<script lang="ts" setup>
+  import {experiences, books} from '@/data/index'
+
+  const age = computed(() => {
+      const birthDate = new Date(2003, 0, 10)
+      const today = new Date()
+      let age = today.getFullYear() - birthDate.getFullYear()
+      const monthDifference = today.getMonth() - birthDate.getMonth()
+      if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+          age--
+      }
+      return age
+  })
+
+  const currentBook = computed(() => {
+      return books.find(book => book.status == 'READING')
+  })
+
 </script>
 
 <template>
@@ -24,7 +31,7 @@ const age = computed(() => {
                             <AtomsIconButton icon="spaces" />
                             <span class="kode-mono-font text-lg text-zinc-700">About me</span>
                         </div>
-                        <p class="text-lg font-medium max-w-120 mt-10 text-center text-zinc-700">
+                        <p class="text-2xl font-medium max-w-120 mt-10 text-center text-zinc-700">
                             I’m a curious engineer, crafting scalable solutions that elevate teams and deliver value to
                             users.
                         </p>
@@ -32,11 +39,11 @@ const age = computed(() => {
 
                     <div class="grid grid-cols-11 grid-rows-3 md:grid-rows-2 gap-5">
                         <div
-                            class="col-span-11 md:col-span-5 row-start-2 md:row-start-1 bg-white  border-2 rounded-2xl p-6 bg-custom-gradient"
+                            class="col-span-11 md:col-span-5 row-start-2 md:row-start-1 bg-white card bg-custom-gradient"
                         >
                             <AtomsIconButton icon="smile" />
 
-                            <h2 class="font-semibold my-4 text-zinc-700">Clarance Liberi</h2>
+                            <h2 class="card__title">Clarance Liberi</h2>
 
                             <ul class="list-disc ml-8 text-sm space-y-2 text-zinc-500 font-light">
                                 <li>{{ age }} years old</li>
@@ -45,7 +52,7 @@ const age = computed(() => {
                             </ul>
                         </div>
                         <div
-                            class="col-span-11 md:col-span-5 row-start-3 md:row-start-2 bg-white bg-custom-gradient border-2 rounded-2xl p-6"
+                            class="col-span-11 md:col-span-5 row-start-3 md:row-start-2 bg-white bg-custom-gradient card"
                         >
                             <p class="text-zinc-500 font-light text-sm xl:text-lg">
                                 I love working on tough problems that bring value to teams and products. My passion for
@@ -62,6 +69,34 @@ const age = computed(() => {
                                 alt="clarance liberi profile picture"
                                 class="object-cover w-full h-full rounded-xl"
                             />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-5 pt-10">
+                        <div class="col-span-2 bg-grey-grey10 card">
+                        <AtomsIconButton icon="briefcase" />
+
+                            <h2 class="card__title">Past Experience</h2>
+
+                            <p class="pb-3 text-zinc-500 font-light ">catchy subtitle about experiences</p>
+
+                            <ul class="list-none text-sm space-y-2 text-zinc-500 font-light">
+                                <li v-for="{company, startDate, endDate, color} in experiences" class="flex items-center space-x-3 py-1">
+                                 <AtomsBullet :ping="!endDate" :color="color" />  <div class="flex flex-1 justify-between">  <span class="font-semibold">{{ company }}</span> <span>{{ endDate ? `${startDate} - ${endDate}` : "Current" }}</span> </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div v-if="currentBook" class="card bg-grey-grey10">
+                            <AtomsIconButton icon="book" />
+
+                            <h2 class="card__title">Currently Reading</h2>
+
+                            <p class="pb-3 text-zinc-500 font-light ">{{ currentBook.title }}</p>
+
+                            <h5 class="pb-3 text-zinc-500 font-medium ">By {{ currentBook.author }}</h5>
+
+                            <NuxtImg :src="currentBook.cover" :alt="`${currentBook.title} book cover`" class="m-auto object-cover rounded-md border" :style="{width:'180px',height:'204px'}" />
+
                         </div>
                     </div>
                 </div>
@@ -88,4 +123,13 @@ const age = computed(() => {
 .bg-custom-gradient {
   background-image: linear-gradient(to top right, var(--grey-grey10), var(--grey-grey20));
 }
+.card{
+    @apply border-2 rounded-3xl p-6;
+
+    &__title{
+        @apply text-lg font-semibold text-zinc-700 py-4;
+    }
+}
+
+
 </style>
