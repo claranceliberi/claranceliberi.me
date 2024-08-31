@@ -37,24 +37,24 @@
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-11 grid-rows-3 md:grid-rows-2 gap-5">
+                    <div class="grid grid-cols-11 grid-rows- md:grid-rows-2 gap-5">
                         <div
-                            class="col-span-11 md:col-span-5 row-start-2 md:row-start-1 bg-white card bg-custom-gradient"
+                            class="col-span-11 md:col-span-5 row-start-5 md:row-start-1 bg-white card bg-custom-gradient"
                         >
                             <AtomsIconButton icon="smile" />
 
                             <h2 class="card__title">Clarance Liberi</h2>
 
-                            <ul class="list-disc ml-8 text-sm space-y-2 text-zinc-500 font-light">
+                            <ul class="list-disc ml-8 md:text-sm space-y-2 text-zinc-500 font-light">
                                 <li>{{ age }} years old</li>
                                 <li>Rwanda 🇷🇼</li>
                                 <li>Software Engineer</li>
                             </ul>
                         </div>
                         <div
-                            class="col-span-11 md:col-span-5 row-start-3 md:row-start-2 bg-white bg-custom-gradient card"
+                            class="col-span-11 md:col-span-5 row-start-6  md:row-start-2 bg-white bg-custom-gradient card"
                         >
-                            <p class="text-zinc-500 font-light text-sm xl:text-lg">
+                            <p class="text-zinc-500 font-light xl:text-lg">
                                 I love working on tough problems that bring value to teams and products. My passion for
                                 scalable, performant software drives my work, and my relentless curiosity and commitment
                                 set me apart. I'm always exploring new tools to enhance developer experience and elevate
@@ -62,7 +62,7 @@
                             </p>
                         </div>
                         <div
-                            class="col-span-11 md:col-span-6 row-start-1 md:row-span-2 bg-grey-grey5 rounded-2xl p-2 border-2 shadow-2xl"
+                            class="col-span-11 md:col-span-6 row-start-1 row-span-4 md:row-span-2 bg-grey-grey5 rounded-2xl p-2 border-2 shadow-2xl"
                         >
                             <img
                                 src="https://res.cloudinary.com/dawr8i20o/image/upload/c_scale,f_webp,w_910/v1725092932/claranceliberi.me/Liberi_profile_pic_2_-min_rxo6gw.webp"
@@ -72,8 +72,8 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-3 gap-5 pt-10">
-                        <div class="col-span-2 bg-grey-grey10 card">
+                    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 md:grid-rows-1 gap-5 pt-10">
+                        <div class="col-span-2 bg-grey-grey10 card shadow-xl">
                         <AtomsIconButton icon="briefcase" />
 
                             <h2 class="card__title">Past Experience</h2>
@@ -108,7 +108,7 @@
 <style lang="scss">
 /* https://kovart.github.io/dashed-border-generator/ */
 .rectangle {
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23DBDBDBFF' stroke-width='3' stroke-dasharray='9%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23dadada' stroke-width='3' stroke-dasharray='9%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 16px;
 
     &.left {

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { CompanyColors } from '~/types';
+import { computed } from '#imports';
 
   type Props = {
     color?: CompanyColors
@@ -26,19 +27,19 @@ import type { CompanyColors } from '~/types';
   const borderColorClass = computed(() => {
     switch (props.color) {
       case 'BLUE':
-        return 'border-3 border-sky-200 '
+        return 'border-2 border-sky-200 '
       case 'GREEN':
-        return 'border-3 border-emerald-200 '
+        return 'border-2 border-emerald-200 '
       case 'GREY':
       default:
-        return 'border-3 border-gray-200 '
+        return 'border-2 border-gray-200 '
     }
   })
 
 </script>
 
 <template>
-    <span class="relative flex items-center" :class="{'h-4 w-4': !props.ping, 'h-2 w-2': props.ping}">
+    <span class="relative flex items-center" :class="{'h-3 w-3': !props.ping, 'h-2 w-2': props.ping}">
         <span
             v-if="props.ping"
             class="absolute inline-flex h-full w-full rounded-full  opacity-75"
