@@ -36,6 +36,7 @@ module.exports = {
                 },
                 grey: {
                     white: 'var(--grey-white)',
+                    grey5: 'var(--grey-grey5)',
                     grey10: 'var(--grey-grey10)',
                     grey20: 'var(--grey-grey20)',
                     grey30: 'var(--grey-grey30)',

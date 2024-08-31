@@ -19,9 +19,9 @@ body,
     --color-sec: #4b5563;
     --color-primary: #111827;
     --color-secondary: #374151;
-    --bg: #f3f4f6;
+    --bg: #fcfcfc;
     --bg-secondary: #ffffff;
-    --border-color: #e5e7eb;
+    --border-color: #e7e7e9;
 
     --theme-primary: #1f2937;
     --theme-lighter-alt: #f9fafb;
@@ -33,10 +33,12 @@ body,
     --theme-dark: #6b7280;
     --theme-darker: #4b5563;
 
+
     --grey-white: #ffffff;
-    --grey-grey10: #f9fafb;
+    --grey-grey5: #f0f0f0;
+    --grey-grey10: #f7f7f7; // first
     --grey-grey20: #f3f4f6;
-    --grey-grey30: #e5e7eb;
+    --grey-grey30: #dddddd; // second
     --grey-grey40: #d1d5db;
     --grey-grey50: #9ca3af;
     --grey-grey60: #6b7280;

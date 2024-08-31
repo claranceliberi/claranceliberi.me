@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+    <script lang="ts" setup>
 const age = computed(() => {
     const birthDate = new Date(2003, 0, 10)
     const today = new Date()
@@ -32,7 +32,7 @@ const age = computed(() => {
 
                     <div class="grid grid-cols-11 grid-rows-3 md:grid-rows-2 gap-5">
                         <div
-                            class="col-span-11 md:col-span-5 row-start-2 md:row-start-1 bg-white bg-gradient-to-tr from-zinc-200/50 to-zinc-200 border-zinc-300 border-2 rounded-2xl p-6"
+                            class="col-span-11 md:col-span-5 row-start-2 md:row-start-1 bg-white  border-2 rounded-2xl p-6 bg-custom-gradient"
                         >
                             <AtomsIconButton icon="smile" />
 
@@ -45,7 +45,7 @@ const age = computed(() => {
                             </ul>
                         </div>
                         <div
-                            class="col-span-11 md:col-span-5 row-start-3 md:row-start-2 bg-white bg-gradient-to-tr from-zinc-200/50 to-zinc-200 border-zinc-300 border-2 rounded-2xl p-6"
+                            class="col-span-11 md:col-span-5 row-start-3 md:row-start-2 bg-white bg-custom-gradient border-2 rounded-2xl p-6"
                         >
                             <p class="text-zinc-500 font-light text-sm xl:text-lg">
                                 I love working on tough problems that bring value to teams and products. My passion for
@@ -55,10 +55,10 @@ const age = computed(() => {
                             </p>
                         </div>
                         <div
-                            class="col-span-11 md:col-span-6 row-start-1 md:row-span-2 bg-zinc-100 rounded-2xl p-2 border-zinc-300 border-2 shadow-2xl"
+                            class="col-span-11 md:col-span-6 row-start-1 md:row-span-2 bg-grey-grey5 rounded-2xl p-2 border-2 shadow-2xl"
                         >
                             <img
-                                src="https://res.cloudinary.com/dawr8i20o/image/upload/c_scale,e_grayscale,f_webp,w_1360/v1724051359/claranceliberi.me/Liberi_profile_pic_1_-min_w0qwko.webp"
+                                src="https://res.cloudinary.com/dawr8i20o/image/upload/c_scale,f_webp,w_910/v1725092932/claranceliberi.me/Liberi_profile_pic_2_-min_rxo6gw.webp"
                                 alt="clarance liberi profile picture"
                                 class="object-cover w-full h-full rounded-xl"
                             />
@@ -83,5 +83,9 @@ const age = computed(() => {
     &.right {
         right: 7%;
     }
+}
+
+.bg-custom-gradient {
+  background-image: linear-gradient(to top right, var(--grey-grey10), var(--grey-grey20));
 }
 </style>
