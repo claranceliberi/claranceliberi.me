@@ -25,7 +25,7 @@ import { experiences, books } from '@/data/index';
             <div class="min-h-[100%] w-56 rectangle absolute right z-0"></div>
 
             <div class="flex justify-center pb-20">
-                <div class="z-10 w-full max-w-[70%]">
+                <div class="z-10 w-full max-w-[90%] md:max-w-[75%] ">
                     <div class="flex flex-col items-center py-20">
                         <div class="flex items-center space-x-4">
                             <AtomsIconButton icon="spaces" />
@@ -108,7 +108,7 @@ import { experiences, books } from '@/data/index';
 <style lang="scss">
 /* https://kovart.github.io/dashed-border-generator/ */
 .rectangle {
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23dadada' stroke-width='3' stroke-dasharray='9%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23e8e9ec' stroke-width='3' stroke-dasharray='9%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 16px;
 
     &.left {
