@@ -1,5 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  site: {
+    url: 'https://claranceliberi.me/',
+    name: 'Clarance Liberi Ntwari',
+    description: 'Welcome to my personal website. I am a software engineer.',
+    defaultLocale: 'en',
+  },
   devtools: { enabled: true },
   modules: [
    '@nuxtjs/color-mode',
@@ -7,7 +13,8 @@ export default defineNuxtConfig({
    '@nuxt/content',
    '@unocss/nuxt',
    "@nuxtjs/google-fonts",
-   "@nuxt/image"
+   "@nuxt/image",
+   '@nuxtjs/seo'
   ],
 
   tailwindcss: {
