@@ -14,12 +14,12 @@ import type { CompanyColors } from '~/types';
   const colorClass = computed(() => {
     switch (props.color) {
       case 'BLUE':
-        return 'bg-sky-400'
+        return 'bg-sky-300'
       case 'GREEN':
-        return 'bg-emerald-400'
+        return 'bg-emerald-300'
       case 'GREY':
       default:
-        return 'bg-gray-400'
+        return 'bg-gray-300'
     }
   })
 

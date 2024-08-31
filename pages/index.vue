@@ -78,10 +78,10 @@
 
                             <h2 class="card__title">Past Experience</h2>
 
-                            <p class="pb-3 text-zinc-500 font-light ">catchy subtitle about experiences</p>
+                            <p class="pb-8 text-zinc-500 font-light ">A journey through code, creativity, and curiosity</p>
 
                             <ul class="list-none text-sm space-y-2 text-zinc-500 font-light">
-                                <li v-for="{company, startDate, endDate, color} in experiences" class="flex items-center space-x-3 py-1">
+                                <li v-for="{company, startDate, endDate, color} in experiences" class="flex items-center space-x-3 py-2">
                                  <AtomsBullet :ping="!endDate" :color="color" />  <div class="flex flex-1 justify-between">  <span class="font-semibold">{{ company }}</span> <span>{{ endDate ? `${startDate} - ${endDate}` : "Current" }}</span> </div>
                                 </li>
                             </ul>
@@ -91,7 +91,7 @@
 
                             <h2 class="card__title">Currently Reading</h2>
 
-                            <p class="pb-3 text-zinc-500 font-light ">{{ currentBook.title }}</p>
+                            <p class="text-zinc-500 font-light ">{{ currentBook.title }}</p>
 
                             <h5 class="pb-3 text-zinc-500 font-medium ">By {{ currentBook.author }}</h5>
 
