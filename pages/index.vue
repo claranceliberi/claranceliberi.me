@@ -37,7 +37,7 @@ import { experiences, books } from '@/data/index';
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-11 grid-rows- md:grid-rows-2 gap-5">
+                    <div class="grid grid-cols-11 grid-rows- md:grid-rows-2 gap-8 md:gap-5">
                         <div
                             class="col-span-11 md:col-span-5 row-start-5 md:row-start-1 bg-white card bg-custom-gradient"
                         >
@@ -72,7 +72,7 @@ import { experiences, books } from '@/data/index';
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 md:grid-rows-1 gap-5 pt-10">
+                    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 md:grid-rows-1 gap-y-8 md:gap-5 pt-10">
                         <div class="col-span-2 bg-grey-grey10 card shadow-xl">
                         <AtomsIconButton icon="briefcase" />
 
