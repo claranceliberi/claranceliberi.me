@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import {experiences, books} from '@/data/index'
+import { experiences, books } from '@/data/index';
 
   const age = computed(() => {
       const birthDate = new Date(2003, 0, 10)
