@@ -16,7 +16,9 @@ export default defineNuxtConfig({
    "@nuxt/image",
    '@nuxtjs/seo'
   ],
-
+  build: {
+    transpile: ["shiki"],
+  },
   tailwindcss: {
     cssPath: '~/assets/styles/_tailwind.scss'
   },
@@ -29,12 +31,6 @@ export default defineNuxtConfig({
       theme:'vitesse-dark'
     }
   },
-
-  vite: {
-   plugins: [
-   ],
- },
-
   googleFonts: {
       prefetch:true,
       preconnect:true,
