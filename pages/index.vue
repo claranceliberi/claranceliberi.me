@@ -24,7 +24,7 @@ import { experiences, books } from '@/data/index';
             <div class="min-h-[100%] w-56 rectangle absolute left z-0"></div>
             <div class="min-h-[100%] w-56 rectangle absolute right z-0"></div>
 
-            <div class="flex justify-center pb-20">
+            <div class="flex justify-center pb-14">
                 <div class="z-10 w-full max-w-[90%] md:max-w-[75%] ">
                     <div class="flex flex-col items-center py-20">
                         <div class="flex items-center space-x-4">
@@ -100,6 +100,10 @@ import { experiences, books } from '@/data/index';
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="flex justify-center pb-10">
+                <AtomsFooter />
             </div>
         </article>
     </NuxtLayout>
