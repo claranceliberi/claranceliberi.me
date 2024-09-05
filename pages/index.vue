@@ -20,7 +20,7 @@ import { experiences, books } from '@/data/index';
 
 <template>
     <NuxtLayout>
-        <article class="relative">
+        <article class="relative selection:bg-grey-grey60 selection:text-white">
             <div class="min-h-[100%] w-56 rectangle absolute left z-0"></div>
             <div class="min-h-[100%] w-56 rectangle absolute right z-0"></div>
 
@@ -43,7 +43,7 @@ import { experiences, books } from '@/data/index';
                         >
                             <AtomsIconButton icon="smile" />
 
-                            <h2 class="card__title">Clarance Liberi</h2>
+                            <h2 class="card__title">Clarance Liberi<span class="text-grey-grey30">ste</span> Ntwari</h2>
 
                             <ul class="list-disc ml-8 md:text-sm space-y-2 text-zinc-500 font-light">
                                 <li>{{ age }} years old</li>

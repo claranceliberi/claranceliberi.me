@@ -7,6 +7,6 @@
             class="underline pr-2"
             >CC BY-NC-SA 4.0</a
         >
-         2022 - {{ new Date().getFullYear() }} &copy; Clarance Liberiste Ntwari
+         2022 - {{ new Date().getFullYear() }} &copy; Clarance Liberi<span class="text-grey-grey30">ste</span> Ntwari
     </span>
 </template>
