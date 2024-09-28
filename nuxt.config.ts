@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   },
   gtag: {
     enabled: process.env.NODE_ENV === 'production',
-    id: 'G-PFTEGQSFPC'
+    id: 'G-JHWPXRB96E'
    },
   tailwindcss: {
     cssPath: '~/assets/styles/_tailwind.scss'
