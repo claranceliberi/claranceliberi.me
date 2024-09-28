@@ -8,17 +8,22 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: [
-   '@nuxtjs/color-mode',
-   '@nuxtjs/tailwindcss',
-   '@nuxt/content',
-   '@unocss/nuxt',
-   "@nuxtjs/google-fonts",
-   "@nuxt/image",
-   '@nuxtjs/seo'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/content',
+    '@unocss/nuxt',
+    "@nuxtjs/google-fonts",
+    "@nuxt/image",
+    '@nuxtjs/seo',
+    'nuxt-gtag'
   ],
   build: {
     transpile: ["shiki"],
   },
+  gtag: {
+    enabled: process.env.NODE_ENV === 'production',
+    id: 'G-TL0KMZN51X'
+   },
   tailwindcss: {
     cssPath: '~/assets/styles/_tailwind.scss'
   },
