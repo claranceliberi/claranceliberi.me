@@ -2,6 +2,13 @@
 
 import { useHead, useSeoMeta } from '#app'
 
+const { $mixpanel } = useNuxtApp()
+const router = useRouter()
+
+router.afterEach((to) => {
+  $mixpanel.track('Page View', { path: to.path, name: String(to.name ?? '') })
+})
+
 useSeoMeta({
   ogImage: 'https://res.cloudinary.com/dawr8i20o/image/upload/c_scale,f_webp,w_910/v1725092932/claranceliberi.me/Liberi_profile_pic_2_-min_rxo6gw.webp',
   twitterTitle: 'Clarance Liberi',

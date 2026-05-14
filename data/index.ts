@@ -12,7 +12,8 @@ export const books: Book[] = [
     title: 'Sarrounded By Idiots',
     author: 'T. Erikson',
     cover: 'https://res.cloudinary.com/dawr8i20o/image/upload/c_scale,f_webp,w_180/v1725100328/claranceliberi.me/books/sarrounded-by-idiots.webp',
-    status: 'READ'
+    status: 'READ',
+    rating: 3
   }
 ]
 
